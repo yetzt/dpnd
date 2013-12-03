@@ -8,7 +8,7 @@ dpnd searches for all non-builtin modules you `require()` and determines the ver
 ## Install
 
 ````
-npm isntall -g dpnd
+npm install -g dpnd
 ````
 
 ## Usage
