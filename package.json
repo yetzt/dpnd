@@ -1,0 +1,40 @@
+{
+	"name": "dpnd",
+	"version": "0.0.1",
+	"description": "automagical package.json dependency determination",
+	"licenses": [
+		{
+			"type": "Public Domain",
+			"url": "http://unlicense.org/UNLICENSE"
+		}
+	],
+	"author": "Sebastian Vollnhals <sv@datenfreunde.com>",
+	"maintainers": [
+		{
+			"name": "Sebastian Vollnhals",
+			"email": "sv@datenfreunde.com",
+			"web": "http://datenfreunde.com/"
+		}
+	],
+	"main": "./dpnd.js",
+	"bin": {
+		"dpnd": "./dpnd.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yetzt/dpnd.git"
+	},
+	"keywords": [
+		"npm",
+		"package.json"
+	],
+	"dependencies": {
+		"commander": ">= 2.1.0",
+		"line-reader": ">= 0.2.3",
+		"walk": ">= 2.2.1",
+		"underscore": ">= 1.5.2"
+	},
+	"engines": {
+		"node": ">= 0.8.15"
+	}
+}
