@@ -15,7 +15,7 @@ var BUILTIN_MODULES = ["assert","buffer","child_process","cluster","crypto","dgr
 
 /* configure command line */
 program
-	.version('0.0.1')
+	.version('0.0.2')
 	.parse(process.argv);
 
 var parse_file = function(filename, callback) {
@@ -31,10 +31,11 @@ var parse_file = function(filename, callback) {
 					modules.push(modname);
 				}
 			});
-			if (last) return callback(null, modules);
+		}).then(function(){
+			callback(null, modules);
 		});
-		
 	});
+
 };
 
 var module_dirs = function(dir, callback, collection) {
